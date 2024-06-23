@@ -201,8 +201,12 @@ void Laberinto::imprimir() {
 
 // Función principal
 int main() {
-    int ancho = 10; // Ancho del laberinto.
-    int alto = 10; // Alto del laberinto.
+    int ancho;
+    int alto;
+    std::cout << "Elige el ancho del laberinto: ";
+    std::cin >> ancho;
+    std::cout << "Elige la altura del laberinto: ";
+    std::cin >> alto;
 
     Laberinto laberinto(ancho, alto); // Crea una instancia de la clase Laberinto.
     laberinto.generar(); // Genera el laberinto.
